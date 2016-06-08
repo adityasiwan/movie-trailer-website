@@ -2,7 +2,6 @@ import webbrowser
 
 
 class Movie:
-    # the class Movie provides a way tos tore movie data
     def __init__(self, title, movie_poster, movie_trailer):
         self.title = title
         self.poster_image_url = movie_poster

@@ -3,7 +3,6 @@ import fresh_tomatoes
 
 
 def show_movies():
-    # creating movie instances
 
     jungle_book = media.Movie("Jungle Book",
                               "http://cdn.collider.com/wp-content/uploads/2015/08/jungle-book-poster-hi-res.jpeg",  # NOQA

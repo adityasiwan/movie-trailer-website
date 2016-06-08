@@ -84,6 +84,7 @@ main_page_head = '''
 </head>
 '''
 
+
 main_page_content = '''
   <body>
     <!-- Trailer Video Modal -->
@@ -114,6 +115,7 @@ main_page_content = '''
     </div>
   </body>
 </html>
+'''
 
 movie_tile_content = '''
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
@@ -122,10 +124,11 @@ movie_tile_content = '''
 </div>
 '''
 
+
 def create_movie_tiles_content(movies):
     content = ''
     for movie in movies:
-            youtube_id_match = re.search(
+        youtube_id_match = re.search(
             r'(?<=v=)[^&#]+', movie.trailer_youtube_url)
         youtube_id_match = youtube_id_match or re.search(
             r'(?<=be/)[^&#]+', movie.trailer_youtube_url)
